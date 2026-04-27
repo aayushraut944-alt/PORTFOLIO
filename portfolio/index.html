@@ -863,24 +863,21 @@
 <div class="divider"></div>
 
 <!-- CONTACT -->
-<section id="contact">
-  <div class="contact-wrap">
-    <div class="contact-info reveal">
-      <p class="section-label">Contact</p>
-      <h2>Let's build something <span style="background:linear-gradient(135deg,var(--accent),var(--accent2));-webkit-background-clip:text;-webkit-text-fill-color:transparent">together</span></h2>
-      <p>I'm open to full-time roles, freelance work, and interesting collaborations. Drop a message and I'll get back to you.</p>
-      <a href="mailto:aayushraut944@gmail.com" class="contact-email">
-        ✉ aayushraut944@gmail.com
-      </a>
-    </div>
-    <div class="contact-form reveal">
-      <input type="text" placeholder="Your name">
-      <input type="email" placeholder="Your email">
-      <textarea placeholder="Your message…"></textarea>
-      <button class="btn btn-primary">Send message</button>
-    </div>
-  </div>
-</section>
+<form class="contact-form"
+  action=https://formspree.io/f/meevwrpl
+  method="POST"
+  id="contactForm">
+
+  <input type="text" name="name" placeholder="Your name" required>
+  <input type="email" name="email" placeholder="Your email" required>
+  <textarea name="message" placeholder="Your message…" required></textarea>
+
+  <button class="btn btn-primary" type="submit" id="submitBtn">
+    Send message
+  </button>
+
+  <p id="formStatus" style="font-size:.9rem;margin-top:.5rem;display:none"></p>
+</form>
 
 <!-- FOOTER -->
 <footer>
